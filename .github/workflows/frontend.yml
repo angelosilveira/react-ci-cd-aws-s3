@@ -23,9 +23,6 @@ jobs:
       - name: Generate Project Build
       - run: yarn build
 
-      - name: Execute all tests
-      - run: yarn test
-
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:

@@ -3,7 +3,7 @@ name: Frontend S3
 on:
   push:
     branches:
-      - main
+      - "main"
 
 jobs:
   build:

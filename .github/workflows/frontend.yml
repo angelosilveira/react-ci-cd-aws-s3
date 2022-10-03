@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
       - uses: actions/checkout@v3
 
       - name: Use Nodejs v16
@@ -36,5 +37,5 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      - name: Update Bucket
+      - name: Deploy to Bucket
         run: aws s3 cp build/ s3://angelo-ci-cd-react-app --recursive

@@ -34,4 +34,4 @@ jobs:
           aws-region: us-east-2
 
       - name: Update Bucket
-        run: aws s3 cp build/ s3://angelo-ci-cd-react-app --acl --recursive public-read
+        run: aws s3 cp build/ s3://angelo-ci-cd-react-app --recursive
